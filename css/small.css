@@ -1,5 +1,12 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
+    
+    html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
 body {
     font-family: sans-serif;
+    color: #303030;
 }
 
 header {
@@ -17,6 +24,8 @@ header h2 {
     margin: 0;
 }
 
+/* Navigation Rules Below */
+
 nav {
     background-color: #f89c1f;
 }
@@ -25,7 +34,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
+nav li {
     list-style-type: none;
 }
 
@@ -38,7 +47,10 @@ nav a {
     padding: .8rem 0;
     text-align: center;
     text-decoration: none;
+    color: #303030;
 }
+
+/* Main rules below */
 
 main {
     padding: 2%;
