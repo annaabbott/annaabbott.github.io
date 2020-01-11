@@ -77,7 +77,7 @@ main figcaption {
 footer {
     text-align: center;
     clear: both;
-    background-color: #eeeeee;
+    background-color: #dddddd;
     padding: .8rem;
 }
 .clearfix:after {
