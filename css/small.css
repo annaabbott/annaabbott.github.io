@@ -60,6 +60,10 @@ main h1 {
     clear: both;
 }
 
+main p{
+    margin: 0;
+}
+
 main figure {
     width: 100%;
     margin: 0;
