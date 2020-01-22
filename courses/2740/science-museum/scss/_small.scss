@@ -1,0 +1,123 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
+    
+    html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+body {
+    font-family:$fontFamily;
+    font-weight: $regularWeight;
+    color: #303030;
+}
+
+header {
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+
+}
+
+header img {
+    float: left;
+    padding-right: 15px;
+}
+
+header h1 {
+    font-size: 3.0rem;
+    font-weight: $heavyWeight;
+    margin: 3rem 0 0 0;
+}
+
+header h2 {
+    display: none;
+    font-weight: $heavyWeight;
+}
+
+/* Navigation Rules Below */
+
+nav {
+    background-color: $primaryColor;
+    border-bottom: 1px solid #101010;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav li {
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    border: 1px solid #101010;
+}
+
+.active {
+    background-color: #FFF4DB;
+    }
+
+nav  a {
+    display: block;
+    border-right: 1px #101010 solid;
+    padding: .8rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: #101010;
+}
+
+nav a:hover {background-color: #ffd15c;}
+/* Main rules below */
+
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.hero img {
+    width: 100%;
+}
+
+main h1 {
+    clear: both;
+    font-weight: $heavyWeight;
+}
+
+main p{
+    margin: 0;
+    padding: 0 $gutter;
+
+}
+
+main figure.myPhoto {
+    width: 100%;
+    margin: 0;
+    float: right;
+}
+
+main figure.myPhoto img {
+    width: 100%;
+}
+
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    background-color: $primaryColor;
+    padding: .8rem;
+    }
+
+footer a {
+    text-decoration: none;
+    color: #303030;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
