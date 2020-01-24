@@ -362,21 +362,30 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd;
+  margin: 0;
+  color: black;
+}
+
+header img {
+  float: left;
+  padding-right: 25px;
 }
 
 header h1 {
+  font-size: 2rem;
   margin: 0;
+  padding-top: 1rem;
 }
 
 header h2 {
-  margin: 0;
+  margin-top: 0;
   font-weight: normal;
+  font-size: 1.5rem;
 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666;
+  background-color: #4ecb00;
 }
 
 nav ul {
@@ -392,7 +401,7 @@ nav ul li {
 
 nav ul li a {
   display: block;
-  background-color: #444;
+  background-color: #3a9800;
   color: #eee;
   border-left: 1px solid #777;
   padding: .5rem 0;
@@ -406,13 +415,13 @@ nav ul li:first-child a {
 }
 
 nav ul li a:hover {
-  background-color: #eee;
-  color: #333;
+  background-color: #90ff4c;
+  color: black;
 }
 
 nav ul li.active a {
-  background-color: #000;
-  color: #fff;
+  background-color: #276500;
+  color: #eee;
 }
 
 /*----------- MAIN --------------*/
@@ -427,12 +436,14 @@ div.gallery {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0;
 }
 
 div.gallery figure {
   -ms-flex-preferred-size: 46%;
       flex-basis: 46%;
-  margin: 0 2%;
+  margin: .5rem 2%;
+  text-align: center;
 }
 
 div.gallery figure img {
@@ -441,9 +452,14 @@ div.gallery figure img {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #4ecb00;
   padding: .5rem 2%;
   text-align: center;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -456,6 +472,12 @@ footer {
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  header h1 {
+    padding-top: 1rem;
+  }
+  header h2 {
+    margin-top: 0;
+  }
   /*----------- NAVIGATION --------------*/
   nav ul {
     margin-left: 2%;
@@ -473,6 +495,10 @@ footer {
     padding: .5rem 1rem;
   }
   /*----------- MAIN --------------*/
+  div.gallery figure {
+    -ms-flex-preferred-size: 27%;
+        flex-basis: 27%;
+  }
   /*----------- FOOTER --------------*/
 }
 
@@ -486,6 +512,10 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  div.gallery figure {
+    -ms-flex-preferred-size: 17%;
+        flex-basis: 17%;
+  }
   /*----------- FOOTER --------------*/
 }
 

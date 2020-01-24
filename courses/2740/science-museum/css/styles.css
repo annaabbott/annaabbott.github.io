@@ -587,6 +587,10 @@ footer a {
     max-width: 75rem;
     margin: auto;
   }
+  nav ul li {
+    float: left;
+    width: 10%;
+  }
   main figure.myPhoto {
     width: 31%;
   }

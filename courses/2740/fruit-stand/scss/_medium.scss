@@ -7,8 +7,12 @@
 
 /*----------- HEADER --------------*/
 
-
-
+header h1 {
+    padding-top: 1rem;
+    }
+header h2 {
+    margin-top: 0;
+}
 /*----------- NAVIGATION --------------*/
     nav ul {margin-left: 2%;}
     nav ul li {width: auto;}
@@ -19,7 +23,9 @@
 
 /*----------- MAIN --------------*/
 
-
+div.gallery  figure{
+    flex-basis: 27%;
+}
 
 /*----------- FOOTER --------------*/
     

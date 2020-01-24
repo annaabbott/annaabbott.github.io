@@ -6,7 +6,14 @@ header, main {
 nav ul {
     max-width: 75rem;
     margin: auto;
+
+    li {
+        float: left;
+        width: 10%;
+    }
 }
+
+
 
 main figure.myPhoto {
     width: 31%;
