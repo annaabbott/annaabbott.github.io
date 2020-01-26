@@ -428,7 +428,13 @@ nav ul li.active a {
 main {
   padding: 0;
   min-height: 10rem;
-  margin: 0 2%;
+  margin: 0;
+}
+
+main h1 {
+  margin-top: .5rem;
+  margin-left: 2%;
+  margin-bottom: 0;
 }
 
 div.gallery {
@@ -507,20 +513,17 @@ footer a {
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
     max-width: 71.25rem;
-    margin: auto;
+    margin: 0 2%;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
-  header {
-    padding: .5rem 0;
-    margin: 0 2%;
-  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   main {
-    padding: 0;
-    min-height: 10rem;
-    margin: 0 2%;
+    margin: 0;
+  }
+  main h1 {
+    margin: 2%;
   }
   div.gallery figure {
     -ms-flex-preferred-size: 17%;
