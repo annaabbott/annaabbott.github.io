@@ -382,6 +382,7 @@ header h2 {
   font-size: 1.5rem;
 }
 
+/*end header*/
 /*----------- NAVIGATION --------------*/
 nav {
   background-color: #4ecb00;
@@ -510,6 +511,10 @@ footer a {
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
+  header {
+    padding: .5rem 0;
+    margin: 0 2%;
+  }
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
   main {

@@ -9,7 +9,10 @@ header, nav, main, footer {
 
 /*----------- HEADER --------------*/
 
-
+header {
+    padding: .5rem 0;
+    margin: 0 $gutter;
+}
 
 /*----------- NAVIGATION --------------*/
 
