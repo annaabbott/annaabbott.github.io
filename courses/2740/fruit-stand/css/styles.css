@@ -361,19 +361,18 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  padding: .5rem 2%;
-  margin: 0;
+  padding: .5rem 0;
+  margin: 0 2%;
   color: black;
-}
-
-header img {
-  float: left;
-  padding-right: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 130px auto;
+      grid-template-columns: 130px auto;
 }
 
 header h1 {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
   padding-top: 1rem;
 }
 
@@ -426,8 +425,9 @@ nav ul li.active a {
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
+  padding: 0;
   min-height: 10rem;
+  margin: 0 2%;
 }
 
 div.gallery {
@@ -453,7 +453,7 @@ div.gallery figure img {
 /*----------- FOOTER --------------*/
 footer {
   background-color: #4ecb00;
-  padding: .5rem 2%;
+  padding: .5rem;
   text-align: center;
 }
 
@@ -505,13 +505,18 @@ footer a {
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
-    max-width: 64rem;
+    max-width: 71.25rem;
     margin: auto;
   }
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main {
+    padding: 0;
+    min-height: 10rem;
+    margin: 0 2%;
+  }
   div.gallery figure {
     -ms-flex-preferred-size: 17%;
         flex-basis: 17%;
