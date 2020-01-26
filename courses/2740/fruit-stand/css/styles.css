@@ -511,7 +511,7 @@ footer a {
 
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  body {
     max-width: 71.25rem;
     margin: 0 2%;
   }
