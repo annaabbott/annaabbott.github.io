@@ -503,8 +503,8 @@ footer a {
   }
   /*----------- MAIN --------------*/
   div.gallery figure {
-    -ms-flex-preferred-size: 27%;
-        flex-basis: 27%;
+    -ms-flex-preferred-size: 29.3%;
+        flex-basis: 29.3%;
   }
   /*----------- FOOTER --------------*/
 }
@@ -526,8 +526,8 @@ footer a {
     margin: 2%;
   }
   div.gallery figure {
-    -ms-flex-preferred-size: 17%;
-        flex-basis: 17%;
+    -ms-flex-preferred-size: 21%;
+        flex-basis: 21%;
   }
   /*----------- FOOTER --------------*/
 }
