@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Document</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <!--if there's a logo it goes here   -->
+
+<figure class="logo">
+    <img src="images/logoDefault.png" alt="logo" 
+    srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+</figure>
+
+    <h1>Restaurant</h1>
+    <h2>Affordable Eats</h2>
+</header>
+
+<!--navigation below-->
+<nav class="clearfix">
+    <ul>
+        <li>
+            <a href="#">Menu</a>
+        </li>
+        <li>
+            <a href="#">Locations</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li class="active">
+            <a href="#">Our Story</a>
+        </li>
+    </ul>
+</nav>
+
+<!--main below-->
+<main class="clearfix">
+
+<!-- to add an image, use this template:
+<figure class="hero">
+<img src="images/imagename.jpg" alt="screenreadertext">
+<figcaption>Caption</figcaption>
+</figure>-->
+
+<picture class="hero">
+    <source media="(max-width: 450px)" srcset="images/hero450.jpg">
+     <source media="(max-width: 600px)" srcset="images/hero600.jpg">
+     <source media="(max-width: 750px)" srcset="images/hero750.jpg">
+    <source media="(max-width: 9000px)" srcset="images/hero900.jpg">
+    <source media="(max-width: 1050px)" srcset="images/hero1050.jpg">
+     <img src="images/cyril-saulnier-hero-unsplash.jpg.jpg" alt="Lattes">
+ </picture>
+
+<h1>Our Story</h1>
+
+<picture class="founder">
+   <source media="(max-width: 300px)" srcset="images/aleksander-borzenets-founder300-unsplash.jpg">
+    <source media="(max-width: 450px)" srcset="images/aleksander-borzenets-founder450-unsplash.jpg">
+    <source media="(max-width: 600px)" srcset="images/aleksander-borzenets-founder600-unsplash.jpg">
+    <img src="images/aleksander-borzenets-founder-unsplash.jpg" alt="Our founder">
+</picture>
+
+    
+
+<p>Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh. Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt.</p>
+</main>
+
+<!--footer below-->
+
+<footer class="clearfix">
+    <p>&copy; 2020 &bull; Anna Abbott &bull; <a href="#">Login</a></p>
+</footer>
+
+</body>
+</html>
