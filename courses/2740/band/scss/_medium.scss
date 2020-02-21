@@ -1,0 +1,21 @@
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, desktop, floating left */ 
+
+
+
+/*main*/ 
+
+div.bandGallery {
+    article {
+        flex-basis:50%;
+        
+
+        figure {
+            float: right;
+             margin: 0;
+        }
+    }
+}

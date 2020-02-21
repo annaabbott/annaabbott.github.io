@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>The Band: Members</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <!--if there's a logo it goes here
+    <img src="images/fruit-stand-logo.png" alt="Fruit Stand Logo" class="logo">-->
+
+    <h1>The Band</h1>
+    <h2>We Rock Your World</h2>
+</header>
+
+<!--navigation below-->
+<nav class="clearfix">
+    <ul>
+        <li class="active">
+            <a href="#">Members</a>
+        </li>
+        <li>
+            <a href="#">Concerts</a>
+        </li>
+        <li>
+            <a href="#">Book Us</a>
+        </li>
+        <li>
+            <a href="#">Back Story</a>
+        </li>
+    </ul>
+</nav>
+
+<!--main below-->
+<main>
+
+<!-- to add an image, use this template:
+<figure class="hero">
+<img src="images/imagename.jpg" alt="screenreadertext">
+<figcaption>Caption</figcaption>
+</figure>-->
+
+<h1>Members</h1>
+
+<div class="bandGallery">
+    <article>
+        <h2>Dan Drummer</h2>
+        <figure class="drummer">
+            <img src="images/danDrummer.jpg" alt="Dan Drummer">
+        </figure>
+        <p>Lorem ipsum dolor amet portland williamsburg brunch vinyl, meditation craft beer tumeric intelligentsia activated charcoal. Banjo pug chia, fingerstache pickled stumptown before they sold out air plant roof party sartorial farm-to-table kinfolk shabby chic. Flexitarian taxidermy schlitz, drinking vinegar actually ramps shoreditch fanny pack. Crucifix sriracha hell of organic XOXO. Single-origin coffee chicharrones raw denim master cleanse venmo brooklyn woke. Yuccie iPhone pop-up occupy.
+        </p>
+    </article>
+
+    <article>
+        <h2>Sam Singer</h2>
+        <figure class="singer">
+            <img src="images/samSinger.jpg" alt="Sam Singer">
+        </figure>
+        <p>Polaroid craft beer microdosing direct trade bushwick. Squid woke bitters meditation. Art party health goth letterpress tilde shoreditch synth. Raclette mumblecore palo santo microdosing echo park. Organic raclette fixie, whatever readymade shoreditch bitters pitchfork.</p>
+    </article>
+
+    <article>
+        <h2>Grant Guitar</h2>
+        <figure class="guitar">
+            <img src="images/grantGuitar.jpg" alt="Grant Guitar">
+        </figure>
+        <p>Kale chips street art williamsburg salvia woke. Retro pop-up heirloom kombucha, umami poutine gochujang shaman VHS. Biodiesel retro gluten-free vexillologist 3 wolf moon DIY four dollar toast stumptown freegan tofu. Blog coloring book chillwave franzen bespoke. Wayfarers mustache yuccie af helvetica put a bird on it migas iceland health goth beard tote bag green juice. Dreamcatcher skateboard vinyl four loko cray gastropub. Meh vinyl humblebrag, lumbersexual organic aesthetic woke beard authentic bicycle rights craft beer photo booth pop-up cred.</p>
+    </article>
+
+    <article>
+        <h2>Belle Backup</h2>
+        <figure class="backup">
+            <img src="images/belleBackup.jpg" alt="Belle Backup">
+        </figure>
+        <p>Art party VHS jianbing celiac af taiyaki gentrify trust fund everyday carry vinyl. Mumblecore edison bulb polaroid flexitarian street art, live-edge cardigan swag tilde. Celiac meggings tote bag everyday carry actually meditation blog migas. Ethical tote bag vegan asymmetrical yuccie cloud bread chillwave la croix woke XOXO humblebrag. Tacos forage photo booth four loko affogato keffiyeh man bun YOLO lumbersexual.</p>
+    </article>
+</div>
+
+<h2 class="performances">Performances</h2>
+
+<section class="concertGallery">
+    <figure><img alt="Concert" class="lazy" data-src="images/band01.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band02.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band03.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band04.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band05.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band06.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band07.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band08.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band09.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band10.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band11.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band12.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band13.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band14.jpg"></figure>
+
+    <figure><img alt="Concert" class="lazy" data-src="images/band15.jpg"></figure>
+
+
+</section>
+
+</main>
+
+<!--footer below-->
+
+<footer class="clearfix">
+    <p>&copy; 2020 &bull; Anna Abbott &bull; <a href="#">Login</a></p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+<script>
+    var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy", threshold: 0
+    // ... more custom settings?
+});
+</script>
+</body>
+</html>
