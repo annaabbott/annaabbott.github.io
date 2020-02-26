@@ -1,0 +1,289 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+
+body {
+    font-size: $baseFontSize;
+    font-family: $fontFamily;
+    font-weight: $baseFontWeight;
+}
+
+
+/*header*/
+
+/*if using a wrapper, add:
+div#headerWrapper {} */ 
+
+
+header {
+    background-color: $mainColor;
+    padding: 1rem $gutter;
+
+    h1 {
+        font-weight: $boldWeight;
+    }
+    h2 {
+        font-weight: $baseFontWeight;
+    }
+} //end header
+
+/*navigation: this sets up four menu items 25% wide*/ 
+
+/*If using a wrapper, add div#navWrapper{}*/ 
+
+nav {
+    background-color: $accentColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 20%;
+}
+nav ul li a {
+    display: block;
+    background-color: $accentColor;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: $mainColor;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: darken($accentColor, 15%);
+    color: #fff;
+}
+
+/*main*/ 
+
+/*If using a wrapper, add div#mainWrapper{}*/ 
+
+
+
+/* template for hero image: 
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.hero img {
+    width: 100%;
+}*/
+
+main h1 {
+    font-weight: $boldWeight;
+}
+
+/* columns */ 
+main {
+
+  div.flexed {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .column {
+        padding: 0 $gutter;
+    }
+
+    .small-spacer {
+        margin-left: 10%;
+    }
+
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .small-#{$i} {
+            flex-basis: $w;
+        }
+    } //end loop to create columns
+
+    .card {
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+        p {
+            background-color: $mainColor;
+            margin: 0;
+            padding: 1rem 0;
+            color: $textColor;
+            text-align: center; 
+        }
+
+        figure {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
+
+        } // end figure
+
+        .button {
+            background-color: $mainColor;
+            padding: .5rem;
+            button {
+            display: block;
+            margin: 0 auto;
+            background-color: $accentColor;
+            color: #fff;
+            font-size: .75rem;
+        }
+        }
+
+    }// end card class
+
+    .callToAction {
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: $accentColor;
+            color:#fff;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: .5rem;
+        }
+
+        a:hover {
+            background-color: $mainColor;
+            color: #333;
+        }
+
+    }// end call to action class
+
+    .blog {
+        figure {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                display: block;
+            } // end image
+        } //end figure
+
+        h2 {
+            font-weight: $baseFontWeight;
+            background-color: $mainColor;
+            margin: 0;
+            padding-left: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        p {
+            background-color: $mainColor;
+            margin: 0;
+            padding-left: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: $mainColor;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: .5rem;
+            color: $textColor;
+        }
+
+        a:hover {
+            background-color: lighten($mainColor, 10%);
+        }
+
+    } //end blog class
+
+    .tip, .faq {
+
+        h2 {
+            font-weight: $baseFontWeight;
+            background-color: $mainColor;
+            margin: 0;
+            padding-left: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        } 
+
+        p {
+            background-color: $mainColor;
+            margin: 0;
+            padding-left: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            background-color: $mainColor;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: .5rem;
+            color: $textColor;
+        }
+
+        a:hover {
+            background-color: lighten($mainColor, 10%);
+        }
+
+    }
+
+} //end main 
+/*footer*/ 
+
+/*If using a wrapper, add div#footerWrapper{}*/ 
+
+footer {
+    
+    padding: .5rem $gutter;
+    text-align: center;
+
+    .social {
+        background-color: $mainColor;
+        display: flex;
+        justify-content: center;
+
+        a {
+            
+            padding: 1rem $gutter;
+            font-size: 2.5rem;
+            color: $textColor;
+        }
+        
+        a:hover {
+            color: #fff;
+        }
+    }
+}
+
+/*clearfix: so that elements don't colapse*/ 
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}
