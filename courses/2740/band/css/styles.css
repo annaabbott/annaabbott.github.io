@@ -451,7 +451,6 @@ div.bandGallery {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
 }
 
 div.bandGallery article {
@@ -470,49 +469,53 @@ div.bandGallery article p {
 
 div.bandGallery article figure.drummer {
   float: right;
+  margin: 0;
+  shape-outside: circle(50% at 50% 50%);
 }
 
 div.bandGallery article figure.drummer img {
   width: 100%;
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
   margin: .5rem;
 }
 
 div.bandGallery article figure.singer {
   float: right;
+  margin: 0;
+  shape-outside: polygon(50% 0, 100% 100%, 0 100%);
 }
 
 div.bandGallery article figure.singer img {
   width: 100%;
   -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
           clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  shape-outside: polygon(50% 0, 100% 100%, 0 100%);
   margin: .5rem;
 }
 
 div.bandGallery article figure.guitar {
   float: right;
+  margin: 0;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%);
 }
 
 div.bandGallery article figure.guitar img {
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%);
-  shape-outside: polygon(0 0, 100% 0, 100% 100%);
   margin: .5rem;
 }
 
 div.bandGallery article figure.backup {
   float: right;
+  margin: 0;
+  shape-outside: circle(100% at 100% 0);
 }
 
 div.bandGallery article figure.backup img {
   width: 100%;
   -webkit-clip-path: circle(100% at 100% 0);
           clip-path: circle(100% at 100% 0);
-  shape-outside: circle(100% at 100% 0);
   margin: .5rem;
 }
 

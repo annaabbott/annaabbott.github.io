@@ -100,7 +100,7 @@ main h1 {
 div.bandGallery {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 ;
+    
     article {
         flex-basis:100%;
         padding: 0 $gutter;
@@ -111,45 +111,49 @@ div.bandGallery {
 
         figure.drummer {
             float: right;
+            margin: 0;
+            shape-outside: circle(50% at 50% 50%);
                       
             img {
                 width: 100%;
                 clip-path: circle(50% at 50% 50%);
-                shape-outside: circle(50% at 50% 50%);
-                 margin: .5rem;
+                margin: .5rem;
             } //end img
         } //end figure
 
         figure.singer {
             float: right;
+            margin: 0;
+            shape-outside:polygon(50% 0, 100% 100%, 0 100%);
             
             img {
                 width: 100%;
                 clip-path: polygon(50% 0, 100% 100%, 0 100%);
-           shape-outside:polygon(50% 0, 100% 100%, 0 100%);
-            margin: .5rem;
+                margin: .5rem;
             } //end img
         } //end figure
 
         figure.guitar {
             float: right;
-            
+            margin: 0;
+            shape-outside:  polygon(0 0, 100% 0, 100% 100%);
+        
             img {
                 width: 100%;
                 clip-path: polygon(0 0, 100% 0, 100% 100%);
-            shape-outside:  polygon(0 0, 100% 0, 100% 100%);
                 margin: .5rem;
             } //end img
         } //end figure
 
         figure.backup {
             float: right;
-           
+            margin: 0;
+            shape-outside: circle(100% at 100% 0);
+          
             img {
                 width: 100%;
                 clip-path: circle(100% at 100% 0);
-                shape-outside: circle(100% at 100% 0);
-                 margin: .5rem;
+                margin: .5rem;
             } //end img
         } //end figure
 
