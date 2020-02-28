@@ -536,6 +536,7 @@ main .card p {
   padding: 1rem 0;
   color: #303030;
   text-align: center;
+  padding-right: 1rem;
 }
 
 main .card figure {
@@ -614,6 +615,7 @@ main .blog p {
   padding-left: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  padding-right: 1rem;
 }
 
 main .blog a {
