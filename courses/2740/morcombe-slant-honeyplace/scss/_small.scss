@@ -15,23 +15,37 @@ body {
 
 /*header*/
 
-/*if using a wrapper, add:
-div#headerWrapper {} */ 
+div#headerWrapper {
+    background-color: $mainColor;
+    border-top: 5px $accentColor solid;
+}
 
 
 header {
-    background-color: $mainColor;
-    padding: 1rem $gutter;
-
+    padding: 1rem $gutter 0 $gutter;
+    display: flex;
+    justify-content: space-between;
     h1 {
         font-weight: $boldWeight;
+        margin-bottom: 0;
     }
     h2 {
         font-weight: $baseFontWeight;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    p {
+        border: 1px solid $textColor;
+        padding: .25rem 10rem .25rem .5rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        align-self: flex-end;
+        background-color: lighten($mainColor, 15%);
+       
     }
 } //end header
 
-/*navigation: this sets up four menu items 25% wide*/ 
+/*navigation*/ 
 
 /*If using a wrapper, add div#navWrapper{}*/ 
 
@@ -60,11 +74,11 @@ nav ul li a {
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: $mainColor;
-    color: #333;
+    background-color: lighten($accentColor, 15%);
+    color: #fff;
 }
 nav ul li.active a {
-    background-color: lighten($accentColor, 15%);
+    background-color: lighten($accentColor, 30%);
     color: #fff;
 }
 
@@ -136,18 +150,22 @@ main {
 
         } // end figure
 
-        .button {
+        div.button {
             background-color: $mainColor;
             padding: .5rem;
-            button {
+        }
+        button {
             display: block;
             margin: 0 auto;
             background-color: $accentColor;
             color: #fff;
-            font-size: .75rem;
-        }
-       
-        }
+            font-size: .7rem;
+            border: 0;
+            padding: .25rem 1rem;
+        }   
+        button:hover {
+            background-color: lighten($accentColor, 15%);
+        }     
 
     }// end card class
 
@@ -164,8 +182,8 @@ main {
         }
 
         a:hover {
-            background-color: $mainColor;
-            color: #333;
+            background-color: lighten($accentColor, 15%);
+            color: #fff;
         }
 
     }// end call to action class
@@ -255,6 +273,7 @@ main {
     }
 
 } //end main 
+
 /*footer*/ 
 
 /*If using a wrapper, add div#footerWrapper{}*/ 
@@ -277,7 +296,7 @@ footer {
         }
         
         a:hover {
-            color: #fff;
+            color: lighten($accentColor, 15%);
         }
     }
 }
