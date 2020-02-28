@@ -23,8 +23,8 @@ div#headerWrapper {
 
 header {
     padding: 1rem $gutter 0 $gutter;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    
     h1 {
         font-weight: $boldWeight;
         margin-bottom: 0;
@@ -39,7 +39,9 @@ header {
         padding: .25rem 10rem .25rem .5rem;
         margin-top: 4rem;
         margin-bottom: 1rem;
-        align-self: flex-end;
+        position: absolute;
+        bottom: 0;
+        right: 0;
         background-color: lighten($mainColor, 15%);
        
     }
