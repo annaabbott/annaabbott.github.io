@@ -465,10 +465,6 @@ main .column {
   padding: 0 1vw;
 }
 
-main .small-spacer {
-  margin-left: 10%;
-}
-
 main .small-1 {
   -ms-flex-preferred-size: 8.33333%;
       flex-basis: 8.33333%;
