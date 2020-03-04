@@ -571,6 +571,10 @@ main .card button:hover {
   background-color: #3a5386;
 }
 
+main .callToAction {
+  margin: 0 auto;
+}
+
 main .callToAction a {
   display: block;
   text-decoration: none;
