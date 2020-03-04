@@ -112,15 +112,7 @@ main {
     }
 } //end main
 
-/* template for hero image: 
-main figure.hero {
-    width: 100%;
-    margin: 0;
-}
 
-main figure.hero img {
-    width: 100%;
-}*/
 
 main h1 {
     font-weight: $boldWeight;
@@ -176,7 +168,12 @@ footer {
     } //end footerGrid
 
     div {
-      text-align: center;
+      text-align: left;
+    }
+
+    div.copyright {
+        text-align: center;
+        font-size: .9rem;
     }
 }
 

@@ -464,15 +464,6 @@ main span {
   padding-bottom: 1rem;
 }
 
-/* template for hero image: 
-main figure.hero {
-    width: 100%;
-    margin: 0;
-}
-
-main figure.hero img {
-    width: 100%;
-}*/
 main h1 {
   font-weight: 700;
 }
@@ -527,7 +518,12 @@ footer .footerGrid a {
 }
 
 footer div {
+  text-align: left;
+}
+
+footer div.copyright {
   text-align: center;
+  font-size: .9rem;
 }
 
 /*clearfix: so that elements don't colapse*/
