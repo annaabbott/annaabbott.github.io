@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>EarlyBird News: Politics</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <!--if there's a logo it goes here-->
+    <img src="images/earlybird-news-logo.png" alt="EarlyBird News logo" class="logo">
+
+    <h1>EarlyBird News</h1>
+    <h2>The only news you need first thing in the morning</h2>
+</header>
+
+<!--navigation below-->
+<nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="navMenu" class="hide">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Opinion</a>
+        </li>
+        <li class="active">
+            <a href="#">Politics</a>
+        </li>
+        <li>
+            <a href="#">Business</a>
+        </li>
+    </ul>
+</nav>
+
+<!--main below-->
+<main>
+
+<!-- to add an image, use this template:-->
+
+<div class="newsGrid">
+    <div class="lead">
+        <img src="images/news-headline.jpg" alt="ballot box">
+        <span>Primaries and Caucuses: Live Results</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news01.jpg" alt="Democratic Presidential debate">
+        <span>Highlights from the Latest Democratic Presidential Debate</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news02.jpg" alt="political party symbols">
+        <span>Latest Polling Results</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news03.jpg" alt="electoral college map">
+        <span>How does the US Electoral College Work?</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news04.jpg" alt="Bernie Sanders">
+        <span>Interview with Bernie Sanders and Tim Cook</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news05.jpg" alt="Pete Buttlegieg">
+        <span>Pete Buttlegieg at Town Hall</span>
+    </div>
+
+    <div class="teaser">
+        <img src="images/news06.jpg" alt="the Supreme Court">
+        <span>Supreme Court Cases this Session</span>
+    </div>
+</div> <!--end newsGrid -->
+</main>
+
+<!--footer below-->
+<footer class="clearfix">
+<div class="footerGrid"> 
+    <div class="footerNav">
+        <h2>SECTIONS</h2>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Video</a>
+            </li>
+            <li>
+                <a href="#">Opinion</a>
+            </li>
+            <li>
+                <a href="#">Entertainment</a>
+            </li>
+            <li>
+                <a href="#">Health</a>
+            </li>
+        </ul>
+    </div> 
+    
+    <div class="footerNav">
+        <h2>SHOWS</h2>
+        <ul>
+            <li>
+                <a href="#">Happenings</a>
+            </li>
+            <li>
+                <a href="#">Sunday AM</a>
+            </li>
+            <li>
+                <a href="#">Newsroom</a>
+            </li>
+            <li>
+                <a href="#">World</a>
+            </li>
+        </ul> 
+    </div>
+    
+    <div class="footerNav">
+        <h2>TOOLS</h2>
+        <ul>
+            <li>
+                <a href="#">Jobs</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Media Relations</a>
+            </li>
+        </ul> 
+    </div>   
+
+    <div class="footerNav">
+        <h2>PERSONALITIES</h2>
+        <ul>
+            <li>
+                <a href="#">Jim Johnson</a>
+            </li>
+            <li>
+                <a href="#">Allen Avery</a>
+            </li>
+            <li>
+                <a href="#">Bill Banton</a>
+            </li>
+            <li>
+                <a href="#">Charlie Christensen</a>
+            </li>
+            <li>
+                <a href="#">Dave Dingilmire</a>
+            </li>
+        </ul> 
+    </div>   
+</div>
+
+<div>&copy; 2020 &bull; All Rights Reserved</div>
+</footer>
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>

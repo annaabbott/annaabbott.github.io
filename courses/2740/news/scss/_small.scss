@@ -1,0 +1,188 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+
+body {
+    font-size: $baseFontSize;
+    font-family: $fontFamily;
+    font-weight: $baseFontWeight;
+}
+
+
+/*header*/
+
+/*if using a wrapper, add:
+div#headerWrapper {} */ 
+
+
+header {
+    background-color: $mainColor;
+    padding: 1rem $gutter;
+
+    h1 {
+        display: none;
+        font-weight: $boldWeight;
+    }
+    h2 {
+        display: none;
+        font-weight: $baseFontWeight;
+    }
+} //end header
+
+/*navigation: this sets up four menu items 25% wide*/ 
+
+/*If using a wrapper, add div#navWrapper{}*/ 
+
+nav {
+    background-color: $accentColor;
+
+    button {
+        margin: .2rem $gutter;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+    } // end hamburger button styling
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: $accentColor;
+    color: $textColor;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    padding: 1rem $gutter;
+    text-decoration: none;
+    font-size: .9rem;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: lighten($accentColor, 15%);
+    color: $textColor;
+}
+nav ul li.active a {
+    background-color: darken($accentColor, 15%);
+    color: #fff;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*main*/ 
+
+/*If using a wrapper, add div#mainWrapper{}*/ 
+
+main {
+    padding: 1rem $gutter;
+
+    .newsGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        .teaser, .lead {
+            padding: .5rem $gutter;
+        }
+
+        .teaser img, .lead img {
+            width: 100%;
+        }
+
+        .lead {
+            grid-column: 1 / span 2;
+        }
+
+    } //end newsGrid
+
+    span {
+        display: block;
+        text-align: center;
+        font-weight: $boldWeight;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+} //end main
+
+/* template for hero image: 
+main figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.hero img {
+    width: 100%;
+}*/
+
+main h1 {
+    font-weight: $boldWeight;
+}
+
+    div.parent figure {
+        
+        padding: 1rem 2vw;
+        width:100%;
+        margin: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+/*footer*/ 
+
+/*If using a wrapper, add div#footerWrapper{}*/ 
+
+footer {
+    background-color: $mainColor;
+    padding: .5rem $gutter;
+   
+    .footerGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        h2 {
+            margin: .5rem 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul li a {
+            display: block;
+            color: $textColor;
+            padding: 1rem $gutter;
+            text-decoration: none;
+            font-size: .9rem;
+        }
+
+        a {
+        text-decoration: none;
+        color: $textColor;
+        }
+    } //end footerGrid
+
+    div {
+      text-align: center;
+    }
+}
+
+/*clearfix: so that elements don't colapse*/ 
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}

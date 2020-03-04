@@ -1,0 +1,31 @@
+/* setting up max-width for desktop */ 
+
+main {
+    max-width: 80rem;
+    margin:auto;
+}
+
+/* to create a wrapper, surround each section with a div id="headerWrapper" or similar*/ 
+
+/* nav */ 
+
+nav ul li a {
+    padding: .5rem $gutter;
+}
+
+/* main */ 
+
+main div.newsGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .lead {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+} // end newsGrid
+
+/* footer */ 
+
+footer div.footerGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} // end newsGrid

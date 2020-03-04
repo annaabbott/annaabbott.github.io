@@ -1,0 +1,48 @@
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, desktop, floating left */ 
+
+nav ul {
+    margin-left: 2%;
+}
+    nav ul li {
+        float: left;
+        width: auto;
+
+        a {
+            border: none;
+            border-right: 1px solid rgba(0,0,0,0.3);
+        } 
+    } // end li styling
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;
+}
+
+nav button {
+    display: none;
+} //make hamburger button go away on med. and lg. screens
+
+nav ul.hide {
+    display:block;
+}
+
+/*main */ 
+
+main div.newsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .lead {
+        grid-column: 1 / span 3;
+    }
+
+} // end newsgrid
+
+/*footer */ 
+
+footer div.footerGrid {
+    grid-template-columns: 1fr 1fr;
+ 
+} // end footerGrid
