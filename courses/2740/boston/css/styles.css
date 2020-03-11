@@ -545,7 +545,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #303030;
+  color: black;
 }
 
 /*clearfix: so that elements don't colapse*/
