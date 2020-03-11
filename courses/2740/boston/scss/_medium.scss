@@ -1,0 +1,59 @@
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, desktop, floating left */ 
+nav {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a05248+0,734547+100 */
+background: #a05248; /* Old browsers */
+background: -moz-linear-gradient(top,  #a05248 0%, #734547 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #a05248 0%,#734547 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #a05248 0%,#734547 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a05248', endColorstr='#734547',GradientType=0 ); /* IE6-9 */
+}
+
+nav ul {
+    margin-left: 2%;
+}
+    nav ul li {
+        float: left;
+        width: auto;
+
+        a {
+            border: none;
+            border-right: 1px solid rgba(0,0,0,0.3);
+        } 
+    } // end li styling
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;
+}
+
+nav button {
+    display: none;
+} //make hamburger button go away on med. and lg. screens
+
+nav ul.hide {
+    display:block;
+}
+
+    
+   
+
+/* main */ 
+
+main div.cards div {
+    a {
+        margin: 0;
+        height: 464;
+    }
+    
+    flex-basis: 50%;
+    width:100%;
+    margin: 0;
+}
+
+/* template for images using grid:
+main div.parent figure {
+    flex-basis: 31%;
+} */ 
