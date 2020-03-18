@@ -1,0 +1,116 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: $textColor;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $primaryColor;
+
+    img {
+        float: left;
+        padding-right: $gutter;
+    }
+}
+header h1 {
+    margin: 1.75rem 0;
+    font-size: 2.5rem;
+}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/* form styling below */ 
+
+form {
+    fieldset {
+        margin: 2rem 0;
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+        padding: .75rem $gutter;
+    } // end fieldset styling
+
+    legend {
+        color: $textColor;
+        margin: 0 $gutter;
+        padding: 0 .33rem;
+    } // end legend styling 
+
+    label.top, div {
+        display: block;
+        padding-top: 2rem;
+        font-size: .8rem;
+    } // end label styling 
+
+    label.top input, label.top select {
+        -webkit-appearance:none;
+        display: block;
+        font-size: $baseFontSize;
+        border: solid 1px $textColor;
+        border-radius: 5px;
+        padding: .6rem;
+        width: 100%;
+        max-width: 27rem;        
+    } // end input styling 
+
+    label.side {
+        display: block;
+        padding: .6rem;
+        color: $textColor;
+    } // end radio button styling
+
+    input.submitButton {
+        border: none;
+        background-color: $menuColor;
+        color: $menuTextColor;
+        border-radius: 1rem;
+        padding: .6rem;
+        margin: 0 0 2rem $gutter;
+        width: 96%;
+        max-width: 27rem;
+    } // end submit button styling
+
+    label.top input:required {
+        border-left: red solid 5px;
+    } // sets styling to mark required fields
+
+    label.top input:required:valid {
+        border-left: green solid 5px;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $primaryColor;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

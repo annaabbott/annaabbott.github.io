@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Anna Abbott">
+
+<title>Swag Shop: Order</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header class="clearfix">
+        <img src="images/logo.png" alt="Swag Shop Logo" class="logo">
+         <h1>The Swag Shop</h1>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span><i>&equiv;</i>OPEN</span> 
+        <span><i>&otimes;</i>CLOSE</span>
+    </button>
+
+    <ul id="primaryNav">
+        <li><a href="#">Home</a></li>
+        <li class="current-menu-item"><a href="#">Products</a></li>
+        <li><a href="#">Sales</a></li>
+        <li class="parent"><a href="#">Location</a>
+            <ul>
+                <li><a href="#">Here</a></li>
+                <li><a href="#">There</a></li>
+                <li><a href="#">Everywhere</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact</a></li> 
+
+    </ul>
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Order</h1>        
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <label class="top">Full Name* <input type="text" name="name" autocomplete="name" required></label>
+
+                    <label class="top">Phone* <input type="text" name="phone" autocomplete="tel" placeholder="1234567890" required></label>
+
+                    <label class="top">Email <input type="text" name="email" autocomplete="email" ></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Swag Information</legend>
+                    
+                    <label class="top">Date Needed <input type="date" name="date"></label>
+                    
+                    <label class="top">Business Name <input type="text" name="business" ></label>
+                    
+                    <label class="top">Business URL <input type="url" name="url"></label>
+
+                    <label class="top">Color <select name="color">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="grey">Grey</option>
+                    </select></label>
+                    
+                    <label class="top">Quantity <input type="number" name="quantity" pattern="\d*" ></label>
+
+                    <div>Material</div>
+                    <label class="side"><input type="radio" name="materials" value="Aluminum"> Aluminum</label>
+                    <label class="side"><input type="radio" name="materials" value="plastic" > Plastic</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Information</legend>
+
+                    <label class="top">Name on Card* <input type="text" name="ccname"  required ></label>
+
+                    <label class="top">Credit Card Number* <input type="number" name="cardnumber"  required autocomplete="cc-number"></label>
+
+                    <label class="top">Expiration Date* <input type="date" name="exp-date" required autocomplete="cc-exp"></label>
+                  
+                </fieldset>
+
+                <input type="submit" value="Order My Swag" class="submitButton">
+            </form>
+
+    </main>
+    
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2020 &bull; Anna Abbott &bull; <a href="#">Login</a>
+    </footer>
+
+<!--scripts-->
+
+<script src="scripts/toggleMenu.js"></script>
+
+</body>
+</html>
