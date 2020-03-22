@@ -1,0 +1,45 @@
+
+div#pageWrapper {
+    grid-template-areas: 
+    "header header"
+    "navigation content"
+    "footer footer";
+    grid-template-columns: 150px auto;
+}
+
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, left hand side */ 
+    nav {
+        height: auto;
+    }
+    a.jump {
+        display: none;
+    }
+    nav ul li {width: auto;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+main figure#iPad {
+    width: 31%;
+    margin: 0 $gutter;
+    float: right;
+} 
+
+main figure#samsung {
+    width: 31%;
+    margin: 0 $gutter;
+    float: left;
+} 
+main figure#iPadPro {
+    width: 31%;
+    margin: 0 $gutter;
+    float: right;
+}
+
+/* template for images using grid:
+main div.parent figure {
+    flex-basis: 31%;
+} */ 

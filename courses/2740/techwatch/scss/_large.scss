@@ -1,0 +1,44 @@
+/* setting up max-width for desktop */ 
+
+//  header, nav, main, footer {
+//    background-color: $mainColor;
+//  }
+
+/* to create a wrapper, surround each section with a div id="headerWrapper" or similar*/ 
+
+div#pageWrapper {
+    grid-template-areas: 
+    "header "
+    "navigation"
+    "content"
+    "footer ";
+    grid-template-columns: auto;
+    max-width: 64rem;
+    margin:auto;
+}
+
+/* Header */ 
+
+// div#headerWrapper {
+// max-width: 100%;
+// margin: 0 auto;}
+
+/* Navigation */ 
+nav {
+    border-top: 1px solid #777;
+    nav ul {
+        li:first-child a {border-left: 1px solid #777;}
+        li:last-child a {border-right: 1px solid #777;}
+    }
+}
+
+nav ul li a {
+    float: left;
+    border: none;
+    border-left: 1px solid #777;
+}
+
+/* template for images in body, floated right, 33% width on desktop:
+main figure.myPhoto {
+    width: 31%;
+} */ 
