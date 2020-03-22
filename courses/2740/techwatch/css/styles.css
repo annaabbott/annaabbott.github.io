@@ -548,17 +548,17 @@ footer a {
   }
   main figure#iPad {
     width: 31%;
-    margin: 0 2%;
+    margin: 0 0 1rem 2%;
     float: right;
   }
   main figure#samsung {
     width: 31%;
-    margin: 0 2%;
+    margin: 0 2% 1rem 0;
     float: left;
   }
   main figure#iPadPro {
     width: 31%;
-    margin: 0 2%;
+    margin: 0 0 1rem 2%;
     float: right;
   }
   /* template for images using grid:
@@ -594,10 +594,19 @@ main div.parent figure {
     border: none;
     border-left: 1px solid #777;
   }
-  /* template for images in body, floated right, 33% width on desktop:
-main figure.myPhoto {
-    width: 31%;
-} */
+  /* main */
+  h2 {
+    margin: 2rem 0;
+  }
+  main figure#iPad {
+    width: 23%;
+  }
+  main figure#samsung {
+    width: 23%;
+  }
+  main figure#iPadPro {
+    width: 23%;
+  }
 }
 
 /* end of media query */
