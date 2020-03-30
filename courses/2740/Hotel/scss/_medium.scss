@@ -1,0 +1,19 @@
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, desktop, floating left */ 
+
+nav ul {margin:0;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: 1rem 1rem;}
+
+/* main */ 
+
+main {
+    div#inventoryWrapper {
+        grid-template-columns: 1fr 1fr;
+    } // end wrapper, changing grid for medium screens
+} // end main 
