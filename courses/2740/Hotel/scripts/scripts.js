@@ -1,4 +1,4 @@
-const apiURL = "../hoteldata.json";            
+const apiURL = "../Hotel/hoteldata.json";            
 
 function createFigure(item) {
     let imgTag = document.createElement("img");
