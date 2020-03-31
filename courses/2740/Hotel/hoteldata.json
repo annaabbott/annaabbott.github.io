@@ -8,17 +8,17 @@
     {
         "name": "Southern Hospitality",
         "photo":"images/hotel02.jpg",
-        "address":["123 Sam Houston Ave.", "Galveston, TX", "77555"],
+        "address":["123 Alamo Rd.", "Galveston, TX", "77555"],
         "phone":"1-222-333-4444"
     },{
         "name": "Spanish Mission",
         "photo":"images/hotel03.jpg",
-        "address":["123 Calle Juan Diego", "Santa Fe, NM", "87505"],
+        "address":["123 Cll. San Juan", "Santa Fe, NM", "87505"],
         "phone":"1-987-654-3210"
     },{
         "name": "Downtown Destination",
         "photo":"images/hotel04.jpg",
-        "address":["123 Main St.", "Oklahoma City, OK", "73101"],
+        "address":["123 Main St.", "Tulsa, OK", "73101"],
         "phone":"1-234-567-8910"
     }
 ]
