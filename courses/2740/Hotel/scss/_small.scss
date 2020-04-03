@@ -36,7 +36,7 @@ header {
 /*If using a wrapper, add div#navWrapper{}*/ 
 
 nav {
-    background-color: $mainColor;
+    background-color: $accentColor;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -50,18 +50,27 @@ nav ul {
 }
 nav ul li {
     flex-basis: 33.3%;
+    ion-icon {
+        font-size: 2rem;
+        padding: 0 $gutter;
+    }
 }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
+    background-color: $accentColor;
+    color: $textColor;
     border-left: 1px solid #777;
-    padding: 1rem 0;
+    // margin-bottom:  .5rem;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
     text-transform: uppercase;
+
+    span {
+        padding-bottom: .5rem;
+        display: block;
+    }
 }
 nav ul li:first-child a {border-left: none;}
 
@@ -81,53 +90,59 @@ nav ul li.active a {
 main {
     padding: 1rem $gutter;
 
-    div#inventoryWrapper{
+    div#inventoryWrapper {
         display: grid;
         grid-template-columns: 1fr;
+        margin-bottom: 6rem;
 
         section {
             margin: 1rem $gutter;
             background-color: $mainColor;
 
-        figure {
-            position: relative;
-            margin: 1rem $gutter;
-            width: 96%;
+            figure {
+                position: relative;
+                margin: 1rem $gutter;
+                width: 96%;
 
-            img {
-                width: 100%;
-            } // end img styling
+                img {
+                    width: 100%;
+                } // end img styling
 
-            figcaption {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.4);
-                // background-color: rgba(255,255,255, 0.4);
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    // background-color: rgba(255,255,255, 0.4);
 
-                color: #fff;
-                padding: .5rem $gutter;
-            } // end figcaption styling
-        } // end figure syling 
-        div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                    color: #fff;
+                    padding: .5rem $gutter;
+                } // end figcaption styling
+            } // end figure syling 
+            div.hotelInfo {
+                display: flex;
                 margin: .5rem 0;
+                margin-left: $gutter;
                 
-                span {
-                   padding-right: $gutter;
+                div.infoColumnWrapper {
+                    display: flex;
+                    flex-basis: 50%;
+                    
+                    ion-icon {
+                        flex-basis: 12.5%;
+                        padding: 0 $gutter 1rem $gutter;
+                        font-size:  1.5rem;
+                    } // end icon styling
+    
+                    div.infoText {
+                        flex-basis: 87.5%;
+                        padding: 0 $gutter 1rem $gutter;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
                 }
-
-                ion-icon {
-                    float: left;
-                    font-size: 1.5rem;
-                    padding: 0 $gutter 1rem $gutter;
-                } // end icon styling
-
-                p {
-                    // padding-left: 1rem;
-                    margin: 0;
-                } // end styling of address, phone number text
             } // end div containing address, phone
 
         } // end styling of section containing figure, figcaption, icons, address, contact info.

@@ -14,51 +14,68 @@ function createFigure(item) {
 }
 
 function createAddress(item) {
-    let spanTag = document.createElement("span");
+    let divTag = document.createElement("div");
+    divTag.classList.add("infoText");
 
-    let iconTag = document.createElement("ion-icon");
-    iconTag.name="car";
-    spanTag.appendChild(iconTag);
-    
     let pTag = document.createElement("p");
     pTag.innerText = item.address[0];
-    spanTag.appendChild(pTag);
+    divTag.appendChild(pTag);
 
     pTag = document.createElement("p");
     pTag.innerText = item.address[1];
-    spanTag.appendChild(pTag);
+    divTag.appendChild(pTag);
 
     pTag = document.createElement("p");
     pTag.innerText = item.address[2];
-    spanTag.appendChild(pTag);
 
-
-    return spanTag;
+    divTag.appendChild(pTag);
+    return divTag;
 }
 
-function createContactInfo(item) {
-    let spanTag = document.createElement("span");
-
-    let iconTag = document.createElement("ion-icon");
-    iconTag.name="call";
-    spanTag.appendChild(iconTag);
+function createPhoneNumber(item) {
+    let divTag = document.createElement("div");
+    divTag.classList.add("infoText");
 
     let pTag = document.createElement("p");
     pTag.innerText = item.phone;
-    spanTag.appendChild(pTag);
+    divTag.appendChild(pTag);
 
-    return spanTag;
+    return divTag;
+}
+
+function createInfoColumn(iconName) {
+    let divTag = document.createElement("div");
+    divTag.classList.add("infoColumnWrapper");
+
+    let iconTag = document.createElement("ion-icon");
+    iconTag.name= iconName;
+    divTag.appendChild(iconTag);
+    
+    divTag.appendChild(iconTag);
+    return divTag;
+}
+
+function createHotelInfo(item) {
+    let divTag = document.createElement("div");
+    divTag.classList.add("hotelInfo");
+
+    let leftColumn = createInfoColumn("car");
+    leftColumn.appendChild(createAddress(item));
+
+    divTag.appendChild(leftColumn);
+
+    let rightColumn = createInfoColumn("call");
+    rightColumn.appendChild(createPhoneNumber(item));
+
+    divTag.appendChild(rightColumn);
+
+    return divTag;
 }
 
 function createSection(item) {
     let sectionTag = document.createElement("section");
     sectionTag.appendChild(createFigure(item));
-
-    let divTag = document.createElement("div");
-    divTag.appendChild(createAddress(item));
-    divTag.appendChild(createContactInfo(item));
-
-    sectionTag.appendChild(divTag);
+    sectionTag.appendChild(createHotelInfo(item));
 
     return sectionTag;
 }

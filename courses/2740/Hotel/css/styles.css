@@ -381,7 +381,7 @@ header h2 {
 /*navigation: this sets up four menu items 25% wide*/
 /*If using a wrapper, add div#navWrapper{}*/
 nav {
-  background-color: #91B7D0;
+  background-color: #F6F1EE;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -402,17 +402,26 @@ nav ul li {
       flex-basis: 33.3%;
 }
 
+nav ul li ion-icon {
+  font-size: 2rem;
+  padding: 0 2%;
+}
+
 nav ul li a {
   display: block;
-  background-color: #444;
-  color: #eee;
+  background-color: #F6F1EE;
+  color: #303030;
   border-left: 1px solid #777;
-  padding: 1rem 0;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 1rem;
   text-align: center;
   width: 100%;
   text-transform: uppercase;
+}
+
+nav ul li a span {
+  padding-bottom: .5rem;
+  display: block;
 }
 
 nav ul li:first-child a {
@@ -440,6 +449,7 @@ main div#inventoryWrapper {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  margin-bottom: 6rem;
 }
 
 main div#inventoryWrapper section {
@@ -466,25 +476,36 @@ main div#inventoryWrapper section figure figcaption {
   padding: 0.5rem 2%;
 }
 
-main div#inventoryWrapper section div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+main div#inventoryWrapper section div.hotelInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: .5rem 0;
+  margin-left: 2%;
 }
 
-main div#inventoryWrapper section div span {
-  padding-right: 2%;
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-main div#inventoryWrapper section div ion-icon {
-  float: left;
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper ion-icon {
+  -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%;
+  padding: 0 2% 1rem 2%;
   font-size: 1.5rem;
+}
+
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoText {
+  -ms-flex-preferred-size: 87.5%;
+      flex-basis: 87.5%;
   padding: 0 2% 1rem 2%;
 }
 
-main div#inventoryWrapper section div p {
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoText p {
   margin: 0;
 }
 
@@ -548,21 +569,6 @@ main {
   /* body*/
   /*header*/
   /*navigation for tablet, desktop, floating left */
-  nav ul {
-    margin: 0;
-  }
-  nav ul li {
-    width: auto;
-  }
-  nav ul li:first-child a {
-    border-left: 1px solid #777;
-  }
-  nav ul li:last-child a {
-    border-right: 1px solid #777;
-  }
-  nav ul li a {
-    padding: 1rem 1rem;
-  }
   /* main */
   main div#inventoryWrapper {
     -ms-grid-columns: 1fr 1fr;
