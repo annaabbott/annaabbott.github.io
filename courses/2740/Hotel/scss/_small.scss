@@ -75,11 +75,11 @@ nav ul li a {
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: lighten($accentColor, 5%);
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
 }
 

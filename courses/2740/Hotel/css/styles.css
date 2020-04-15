@@ -381,7 +381,7 @@ header h2 {
 /*navigation: this sets up four menu items 25% wide*/
 /*If using a wrapper, add div#navWrapper{}*/
 nav {
-  background-color: #F6F1EE;
+  background-color: #F98E5A;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -409,7 +409,7 @@ nav ul li ion-icon {
 
 nav ul li a {
   display: block;
-  background-color: #F6F1EE;
+  background-color: #F98E5A;
   color: #303030;
   border-left: 1px solid #777;
   text-decoration: none;
@@ -429,12 +429,12 @@ nav ul li:first-child a {
 }
 
 nav ul li a:hover {
-  background-color: #eee;
+  background-color: #fa9f73;
   color: #333;
 }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
 }
 
