@@ -439,7 +439,6 @@ nav ul li.active a {
 }
 
 /*main*/
-/*If using a wrapper, add div#mainWrapper{}*/
 main {
   padding: 1rem 2%;
 }
@@ -499,13 +498,13 @@ main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper ion-icon {
   font-size: 1.5rem;
 }
 
-main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoText {
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoColumnText {
   -ms-flex-preferred-size: 87.5%;
       flex-basis: 87.5%;
   padding: 0 2% 1rem 2%;
 }
 
-main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoText p {
+main div#inventoryWrapper section div.hotelInfo div.infoColumnWrapper div.infoColumnText p {
   margin: 0;
 }
 

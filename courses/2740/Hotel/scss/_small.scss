@@ -85,7 +85,6 @@ nav ul li.active a {
 
 /*main*/ 
 
-/*If using a wrapper, add div#mainWrapper{}*/ 
 
 main {
     padding: 1rem $gutter;
@@ -134,7 +133,7 @@ main {
                         font-size:  1.5rem;
                     } // end icon styling
     
-                    div.infoText {
+                    div.infoColumnText {
                         flex-basis: 87.5%;
                         padding: 0 $gutter 1rem $gutter;
 

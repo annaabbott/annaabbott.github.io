@@ -1,93 +1,95 @@
 const apiURL = "../Hotel/hoteldata.json";            
 
-function createFigure(item) {
-    let imgTag = document.createElement("img");
-    imgTag.src = item.photo;
 
-    let figcaptionTag = document.createElement("figcaption");
-    figcaptionTag.textContent= item.name;
-
-    let figureTag = document.createElement("figure");
-    figureTag.appendChild(imgTag);
-    figureTag.appendChild(figcaptionTag);
-    return figureTag;
-}
-
-function createAddress(item) {
-    let divTag = document.createElement("div");
-    divTag.classList.add("infoText");
-
-    let pTag = document.createElement("p");
-    pTag.innerText = item.address[0];
-    divTag.appendChild(pTag);
-
-    pTag = document.createElement("p");
-    pTag.innerText = item.address[1];
-    divTag.appendChild(pTag);
-
-    pTag = document.createElement("p");
-    pTag.innerText = item.address[2];
-
-    divTag.appendChild(pTag);
-    return divTag;
-}
 
 function createPhoneNumber(item) {
-    let divTag = document.createElement("div");
-    divTag.classList.add("infoText");
+    let phoneNumberDiv = document.createElement("div");
+    phoneNumberDiv.classList.add("infoColumnText");
 
-    let pTag = document.createElement("p");
-    pTag.innerText = item.phone;
-    divTag.appendChild(pTag);
+    let phoneNumberP = document.createElement("p");
+    phoneNumberP.innerText = item.phone;
+    phoneNumberDiv.appendChild(phoneNumberP);
 
-    return divTag;
+    return phoneNumberDiv;
 }
 
 function createInfoColumn(iconName) {
-    let divTag = document.createElement("div");
-    divTag.classList.add("infoColumnWrapper");
+    let iconDiv = document.createElement("div");
+    iconDiv.classList.add("infoColumnWrapper");
 
     let iconTag = document.createElement("ion-icon");
     iconTag.name= iconName;
-    divTag.appendChild(iconTag);
+    iconDiv.appendChild(iconTag);
     
-    divTag.appendChild(iconTag);
-    return divTag;
+    iconDiv.appendChild(iconTag);
+    return iconDiv;
 }
 
-function createHotelInfo(item) {
-    let divTag = document.createElement("div");
-    divTag.classList.add("hotelInfo");
 
-    let leftColumn = createInfoColumn("car");
-    leftColumn.appendChild(createAddress(item));
 
-    divTag.appendChild(leftColumn);
+function buildPage(myList) {
+    console.log(myList);
+    let inventoryDiv = document.getElementById('inventoryWrapper');
+    
+    for (item = 0; item < myList.length; item++) {
+        let sectionTag = document.createElement("section");
 
-    let rightColumn = createInfoColumn("call");
-    rightColumn.appendChild(createPhoneNumber(item));
+        // creates figure in memory
+        let imgTag = document.createElement("img");
+        imgTag.src = myList[item].photo;
+    
+        let figcaptionTag = document.createElement("figcaption");
+        figcaptionTag.textContent= myList[item].name;
+    
+        let figureTag = document.createElement("figure");
+        figureTag.appendChild(imgTag);
+        figureTag.appendChild(figcaptionTag);
+        sectionTag.appendChild(figureTag);
 
-    divTag.appendChild(rightColumn);
+        let contactInfo = document.createElement("div");
+        contactInfo.classList.add("hotelInfo");
+    
+        let leftColumn = createInfoColumn("car");
 
-    return divTag;
+        //create address
+        let addressDiv = document.createElement("div");
+        addressDiv.classList.add("infoColumnText");
+    
+        let addressLine = document.createElement("p");
+        addressLine.innerText = myList[item].address[0];
+        addressDiv.appendChild(addressLine);
+    
+        addressLine = document.createElement("p");
+        addressLine.innerText = myList[item].address[1];
+        addressDiv.appendChild(addressLine);
+    
+        addressLine = document.createElement("p");
+        addressLine.innerText = myList[item].address[2];
+    
+        addressDiv.appendChild(addressLine);
+
+        leftColumn.appendChild(addressDiv);
+
+        ///------------------
+    
+        contactInfo.appendChild(leftColumn);
+    
+        let rightColumn = createInfoColumn("call");
+        rightColumn.appendChild(createPhoneNumber(myList[item]));
+    
+        contactInfo.appendChild(rightColumn);
+    
+
+        sectionTag.appendChild(contactInfo);
+
+        inventoryDiv.appendChild(sectionTag);
+    }
 }
 
-function createSection(item) {
-    let sectionTag = document.createElement("section");
-    sectionTag.appendChild(createFigure(item));
-    sectionTag.appendChild(createHotelInfo(item));
-
-    return sectionTag;
+function main() {
+    fetch(apiURL)
+        .then((response) => response.json())
+        .then(data => buildPage(data));
 }
 
-fetch(apiURL)
-    .then((response) => response.json())
-    .then((myList) => {
-        console.log(myList);
-        let divTag = document.getElementById('inventoryWrapper');
-        
-        for (let item in myList) {
-            let sectionTag = createSection(myList[item]);
-            divTag.appendChild(sectionTag);
-        }
-    });
+main();
