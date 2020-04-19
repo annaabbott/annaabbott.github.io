@@ -37,6 +37,10 @@ header {
 main {
     padding: 1rem 0;
     background-color: $accentColor;
+
+    h2 {
+        padding: 0 $gutter;
+    }
 }    
 
 div#fiveDay {
