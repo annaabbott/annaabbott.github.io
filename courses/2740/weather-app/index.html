@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Weather</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--js files-->
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+
+    <h1><span id="place"></span> Weather</h1>
+</header>
+
+
+<!--main below-->
+<main>
+
+
+<h2>Today's Weather</h2>
+<div class="today">
+    <div class="card clearfix">
+        <h3>Currently</h3>
+        <p>Temperature:
+        <span id="currentTemp"></span>&deg;F</p>
+        <figure id="weatherIcon">
+        </figure>
+    </div>
+</div>
+
+<h2>Five-day Forecast</h2>
+
+<div id="fiveDay" >
+
+</div>
+</main>
+
+<!--footer below-->
+
+<!-- <footer class="clearfix">
+    <p>&copy; 2020 &bull; Anna Abbott &bull; <a href="#">Login</a></p>
+</footer> -->
+
+<script src="scripts/scripts.js"></script>
+
+</body>
+</html>

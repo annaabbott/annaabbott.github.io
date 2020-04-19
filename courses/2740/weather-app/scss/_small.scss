@@ -1,0 +1,106 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+
+body {
+    font-size: $baseFontSize;
+    font-family: $fontFamily;
+    font-weight: $baseFontWeight;
+}
+
+
+/*header*/
+
+/*if using a wrapper, add:
+div#headerWrapper {} */ 
+
+
+header {
+    background-color: $mainColor;
+    padding: 1rem $gutter;
+
+    h1 {
+        font-weight: $boldWeight;
+    }
+    h2 {
+        font-weight: $baseFontWeight;
+    }
+} //end header
+
+
+/*If using a wrapper, add div#mainWrapper{}*/ 
+
+main {
+    padding: 1rem 0;
+    background-color: $accentColor;
+}    
+
+div#fiveDay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+div.today {
+    padding: 0;
+}
+
+    div.card {
+        border: #707070 1px solid;
+        padding: 1rem;
+        margin: 1rem $gutter;
+        background-color: $mainColor;
+        text-align: center;
+        flex-basis: 96%;
+
+        h3 {
+            padding: 1rem;
+            width: 100%;
+        }
+
+       figure {
+          
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
+    }
+
+
+
+ 
+
+main h1 {
+    font-weight: $boldWeight;
+}
+
+
+
+/*footer*/ 
+
+/*If using a wrapper, add div#footerWrapper{}*/ 
+
+// footer {
+//     background-color: $mainColor;
+//     padding: .5rem $gutter;
+//     text-align: center;
+
+//     a {
+//     text-decoration: none;
+//     color: $textColor;
+//     }
+// }
+
+/*clearfix: so that elements don't colapse*/ 
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}
