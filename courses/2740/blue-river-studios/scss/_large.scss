@@ -1,0 +1,74 @@
+/* setting up max-width for desktop */ 
+
+header, nav, footer {
+    max-width:75rem;
+    margin:auto;
+}
+
+/* to create a wrapper, surround each section with a div id="headerWrapper" or similar*/ 
+
+header {
+    padding: 1rem 0 0 0;
+
+}
+
+/* main */ 
+
+main {
+
+    figure.hero {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    div#highlightWrapper {
+        background-color: #000;
+        .highlight {
+            max-width: 75rem;
+            margin: auto;
+        }
+    }
+
+    h1.aboutUs {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    div.aboutUs {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    hr {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    div.graphs {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+    div.clients {
+        max-width: 75rem;
+        margin: auto;
+    }
+
+
+    /* columns */ 
+    
+        @for $i from 1 through 12 {
+            $w: ($i / 12) * 100%;
+            .large-#{$i} {
+                flex-basis: $w;
+            }
+        } //end loop to create columns
+
+        .sidebar {
+            float: right;
+        }
+        .floatLeft {
+            float: left;
+        }
+     } // end main
+     

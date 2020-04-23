@@ -1,0 +1,51 @@
+/* body*/ 
+
+/*header*/ 
+
+/*navigation for tablet, desktop, floating left */ 
+
+nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li a{padding: .5rem 1rem;}
+
+/* main */ 
+
+main {
+    /* columns */ 
+    
+        @for $i from 1 through 12 {
+            $w: ($i / 12) * 100%;
+            .medium-#{$i} {
+                flex-basis: $w;
+            }
+        } //end loop to create columns
+    
+        .small-spacer {
+            margin-left: 0;
+        }
+
+        .highlight {
+            span {
+                display: block;
+                text-align: right;
+            }
+            h1.rightSide {
+                text-align: right;
+            }
+            h2.rightSide {
+                text-align: right;
+            }
+        }
+
+        .card {
+            figure {
+                position: static;
+                figcaption {
+                    margin-bottom:0;
+                    position: static;
+
+                }
+            }
+        }
+
+     } // end main
