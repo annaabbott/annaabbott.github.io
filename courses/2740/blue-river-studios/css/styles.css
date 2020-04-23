@@ -588,7 +588,7 @@ main .card p {
 
 main h1.aboutUs {
   border-bottom: 1px solid #303030;
-  margin: 0 2%;
+  margin: 1rem 2% 0 2%;
   color: #0380B1;
 }
 
@@ -749,6 +749,7 @@ div#footerWrapper {
   main h1.aboutUs {
     max-width: 75rem;
     margin: auto;
+    padding-top: 1rem;
   }
   main div.aboutUs {
     max-width: 75rem;
