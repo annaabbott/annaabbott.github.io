@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Rich HIgh School",
+        "photo":"images/rich-high.jpg",
+        "address":["145 E Church Street", "Randolph, UT", "84064"],
+        "phone":"435-793-2365"
+    },
+    {
+        "name": "Rich Middle School",
+        "photo":"images/rich-middle-school.jpg",
+        "address":["54 East 100 South", "Laketown, UT", "84038"],
+        "phone":"435-946-3358"
+    },{
+        "name": "South Rich Elementary",
+        "photo":"images/south-rich-elementary.jpg",
+        "address":["25 South 100 West Street", "Randolph, UT", "84064"],
+        "phone":"435-793-2135"
+    },{
+        "name": "North Rich Elementary",
+        "photo":"images/north-rich-elementary.png",
+        "address":["54 East 100 South", "Laketown, UT", "84038"],
+        "phone":"435-946-3358"
+    }
+]

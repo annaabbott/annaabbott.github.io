@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Rich School District</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <a href="index.html">
+        <figure class="logo">
+            <img src="images/school-solid-assets/logo1.png" alt="logo" srcset="images/school-solid-assets/logo1.png 1x, images/school-solid-assets/logo2.png 2x, images/school-solid-assets/logo3.png 3x">
+        </figure>
+
+        <h1>Rich School District</h1>
+    </a>
+    <h2>Providing Quality Education for the Future</h2>
+</header>
+
+<!--navigation below-->
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span><i>&equiv;</i>OPEN</span>
+        <span><i>&otimes;</i>CLOSE</span>
+    </button>
+
+    <ul id="primaryNav">
+        <li>
+            <a href="#">Our Students</a>
+        </li>
+        <li class="parent">
+            <a  href="#">Our Families</a>
+            <ul>
+                <li><a href="#">Maps</a></li>
+                <li class="active"><a href="transcript-form.html">Transcript Requests</a></li>
+                <li><a href="#">Free/Reduced lunch form</a></li>
+                <li><a href="#">Assessment Exemptions</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="schools-landing.html">Our Schools</a>
+        </li>
+        <li class="parent">
+            <a href="#">Our Employees</a>
+            <ul>
+                <li><a href="#">Human Resources</a></li>
+                <li><a href="#">Employee Portal</a></li>
+            </ul>
+        </li>
+        <li class="parent">
+            <a href="#">About RSD</a>
+            <ul>
+                <li><a href="about-rsd-gallery.html">Gallery</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Board</a></li>
+                <li><a href="#">Policies and Procedures</a></li>
+                <li><a href="#">Departments</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+<!--main below-->
+<main>
+
+
+<h1>Rich School District</h1>
+
+<h2>Transcript Request</h2>
+
+<p>Thank you for your order.</p>
+
+<p>We will contact you soon with your confirmation. </p>
+</main>
+
+<!--footer below-->
+
+<footer>
+    <div class="footerGrid">
+        
+        <div class="address">
+            <span>Rich School District</span>
+            <span>25 South 100 West</span>
+            <span>Randolf, UT 84064</span>
+        </div>
+
+        <div class="office">
+            <span>Office Hours</span>
+            <span>M-F 8:00 AM-5:00 PM</span>
+            <span>(435) 793-2135</span>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2020 Anna Abbott</span>
+            <span><a href="#">Legal Information</a></span>
+            <span><a href="#">Privacy Policy</a></span>
+        </div>
+
+    </div>
+</footer>
+
+<!--scripts-->
+
+<script src="scripts/hamburgerToggle.js"></script>
+
+</body>
+</html>

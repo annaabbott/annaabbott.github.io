@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Rich School District</title>
+
+    <!--font family-->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <!--if there's a logo it goes here>-->
+    
+        <a href="index.html">
+            <figure class="logo">
+                <img src="images/school-solid-assets/logo1.png" alt="logo" srcset="images/school-solid-assets/logo1.png 1x, images/school-solid-assets/logo2.png 2x, images/school-solid-assets/logo3.png 3x">
+            </figure>
+    
+            <h1>Rich School District</h1>
+        </a>
+        <h2>Providing Quality Education for the Future</h2>
+</header>
+
+<!--navigation below-->
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span><i>&equiv;</i>OPEN</span>
+        <span><i>&otimes;</i>CLOSE</span>
+    </button>
+
+    <ul id="primaryNav" >
+        <li>
+            <a href="#">Our Students</a>
+        </li>
+        <li class="parent">
+            <a  href="#">Our Families</a>
+            <ul>
+                <li><a href="#">Maps</a></li>
+                <li><a href="transcript-form.html">Transcript Requests</a></li>
+                <li><a href="#">Free/Reduced lunch form</a></li>
+                <li><a href="#">Assessment Exemptions</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="schools-landing.html">Our Schools</a>
+        </li>
+        <li class="parent">
+            <a href="#">Our Employees</a>
+            <ul>
+                <li><a href="#">Human Resources</a></li>
+                <li><a href="#">Employee Portal</a></li>
+            </ul>
+        </li>
+        <li class="parent">
+            <a href="#">About RSD</a>
+            <ul>
+                <li><a href="about-rsd-gallery.html">Gallery</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Board</a></li>
+                <li><a href="#">Policies and Procedures</a></li>
+                <li><a href="#">Departments</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!--main below-->
+<main>
+
+
+    <h1>Rich School District</h1>
+
+    <div class="slider">
+        <!--picture 1-->
+        <div class="slide">
+            <picture>
+                <source srcset="images/small-slider01.jpg" media="(max-width: 35rem)">
+                <source srcset="images/long-slider01.jpg" media="(min-width: 35rem)">
+                <img src ="images/long-slider01.jpg" alt="North Rich Elementary students">
+            </picture>
+            <div>North Rich Elementary School Students</div>
+        </div>
+                
+        <!--picture 2-->
+
+        <div class="slide">
+            <picture>
+                <source srcset="images/small-slider02.jpg" media="(max-width: 35rem)">
+                <source srcset="images/long-slider02.jpg" media="(min-width: 35rem)">
+                <img src ="images/long-slider02.jpg" alt="South Rich Elementary students">
+            </picture>
+            <div>South Rich Elementary School Students</div>
+        </div>        
+        
+        <!--picture 3-->
+
+        <div class="slide">
+            <picture>
+                <source srcset="images/small-slider03.jpg" media="(max-width: 35rem)">
+                <source srcset="images/long-slider03.jpg" media="(min-width: 35rem)">
+                <img src ="images/long-slider03.jpg" alt="North Rich Elementary students">
+            </picture>
+            <div>North Rich Elementary School Students</div>
+        </div>
+    </div>
+
+<div class="gridContainer">
+    <h2>Learning Together</h2>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/canvas.jpg" alt="canvas">
+            <span>Canvas</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/appIcon_skyward_1x.png" alt="skyward">
+            <span>Skyward</span
+                ></a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/Google_Classroom_Logo.png" alt="google Classroom">
+            <span>Google Classroom</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/our-schools-thumbnail.jpg" alt="our schools">
+            <span>Our Schools</span>
+        </a>
+    </div>
+
+    <h2>Around the District</h2>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/news-thumbnail.jpg" alt="news">
+            <span>News</span>
+        </a>
+    </div>
+
+     <div class="landingCard">
+        <a href="#">
+            <img src="images/calendar-thumbnail.jpg" alt="calendars">
+            <span>Calendars</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/lunch-thumbnail.jpg" alt="lunch menu">
+            <span>What's for lunch?</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/gallery-thumbnail.jpg" alt="gallery">
+            <span>Gallery</span>
+        </a>
+    </div>
+
+    <h2>Our Community Classroom</h2>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/volunteer-thumbnail.jpg" alt="volunteer">
+            <span>Volunteer</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/board-thumbnail.jpg" alt="school borard">
+            <span>School Board</span>
+        </a>
+    </div>
+
+    <div class="landingCard">
+        <a href="#">
+            <img src="images/hr-thumbnail.jpg" alt="HR">
+            <span>Human Resources</span>
+        </a>
+    </div>
+
+</div>
+</main>
+
+<!--footer below-->
+<footer>
+    <div class="footerGrid">
+        
+        <div class="address">
+            <span>Rich School District</span>
+            <span>25 South 100 West</span>
+            <span>Randolf, UT 84064</span>
+        </div>
+
+        <div class="office">
+            <span>Office Hours</span>
+            <span>M-F 8:00 AM-5:00 PM</span>
+            <span>(435) 793-2135</span>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2020 Anna Abbott</span>
+            <span><a href="#">Legal Information</a></span>
+            <span><a href="#">Privacy Policy</a></span>
+        </div>
+
+    </div>
+</footer>
+<!--scripts-->
+
+<script src="scripts/hamburgerToggle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.slider').slick({
+            dots:true,
+            arrows:false,
+            infinite: true,
+            speed: 1000,
+            cssEase: 'ease-out',
+            autoplay: true,
+            autoplaySpeed: 30000
+        })
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* body*/ 
+
+/*header*/ 
+
+header {
+    a {
+        figure.logo {
+            padding-top: 0;
+        }
+    }
+}
+
+/*navigation for tablet, desktop, floating left */ 
+
+/* main */ 
+
+main div.gridContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    h2 {
+        grid-column: 1/span 04;
+
+    }
+}
+
+main div#schoolWrapper {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* footer */ 
+
+footer {
+    div.footerGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        
+    }
+}
