@@ -1,4 +1,4 @@
-const apiURL = "../school-data.json";            
+const apiURL = "./school-data.json";            
 
 function createFigure(item) {
     let imgTag = document.createElement("img");
