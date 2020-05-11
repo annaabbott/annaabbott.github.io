@@ -21,7 +21,9 @@ div.news {
     clear: both;
     column-count: 2;
     column-rule: 1px solid #dddddd;
+    padding: 1rem 0;
 }
+
 
 } /* end media query */
 

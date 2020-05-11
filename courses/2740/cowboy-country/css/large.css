@@ -1,16 +1,21 @@
 @media only screen and (min-width: 1028px) {
 
-header, nav, main, footer {
-    max-width: 75rem;
-    margin: auto;
-}
+    header, nav, main, footer {
+        max-width: 75rem;
+        margin: auto;
+    }
 
-main figure {
-    width: 23%;
-}
+    main figure {
+        width: 23%;
+    }
 
-div.news {
-    column-count: 3;
-   }
+    div.news {
+        column-count: 3;
+    }
+
+footer {
+    margin: 1rem auto;
+}
 
 } /* End media query */
+

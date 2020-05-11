@@ -39,7 +39,11 @@ nav li {
 }
 
 nav li.active {
-    background-color: #ffc16b;
+    background-color: #fabd69;
+}
+
+nav ul li a:hover {
+    background-color: #f9a738;
 }
 
 nav a {
@@ -53,11 +57,13 @@ nav a {
 /* Main rules below */
 
 main {
-    padding: 2%;
+    padding: 0 2%;
 }
 
 main h1 {
     clear: both;
+    margin: 0;
+    padding: 1rem 0 0 0;
 }
 
 main p{
@@ -81,8 +87,9 @@ main figcaption {
 footer {
     text-align: center;
     clear: both;
-    background-color: #dddddd;
+    background-color: #f89c1f;
     padding: .8rem;
+    margin: 1rem 0;
 }
 .clearfix:after {
     content: "";
