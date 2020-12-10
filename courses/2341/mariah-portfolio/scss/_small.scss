@@ -1,0 +1,84 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*body*/
+
+body {
+    font-size: $baseFontSize;
+    font-family: $fontFamily;
+    font-weight: $baseFontWeight;
+}
+
+
+/*header*/
+
+/*if using a wrapper, add:
+div#headerWrapper {} */ 
+
+
+header {
+    padding: 1rem $gutter;
+    background-image: url(../images/hero-mobile-560w.jpg);
+    background-repeat: no-repeat;
+    width: 560px
+    ;
+    height: 400px;
+
+    h1 {
+        font-weight: $boldWeight;
+        color: $negativeTextColor;
+        margin-top: 184px;
+    }
+} //end header
+
+
+/*main*/ 
+
+/*If using a wrapper, add div#mainWrapper{}*/ 
+
+
+main {
+
+    padding: 1rem gutter;
+
+    div.gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    div.parent figure {
+        padding: 1rem 2vw;
+        width:100%;
+        margin: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+} 
+
+/*footer*/ 
+
+/*If using a wrapper, add div#footerWrapper{}*/ 
+
+footer {
+    background-color: $mainColor;
+    padding: .5rem $gutter;
+    text-align: center;
+
+    a {
+    text-decoration: none;
+    color: $textColor;
+    }
+}
+
+/*clearfix: so that elements don't colapse*/ 
+.clearfix:after {
+    content: "";
+  display: table;
+  clear: both;
+}

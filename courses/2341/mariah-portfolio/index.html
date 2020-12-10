@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anna Abbott">
+
+    <!-- tells phones not to lie about their width; not to enlarge font on turning sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--this is what's in the browser tab-->
+    <title>Mariah Abbott</title>
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!--font awesome
+    <script src="https://kit.fontawesome.com/a711695820.js" crossorigin="anonymous"></script>-->
+
+    <!--style sheets-->
+    <link href="scss/styles.css" rel="stylesheet">
+
+</head>
+
+<!--body-->
+<body>
+    
+<!--header below-->
+
+<header class="clearfix">
+    <h1>Mariah Abbott, dancer</h1>
+</header>
+
+<!--navigation below-->
+
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span><i>&equiv;</i>OPEN</span> 
+        <span><i>&otimes;</i>CLOSE</span>
+    </button>
+
+    <ul id="primaryNav">
+        <li class="current-menu-item">
+            <a href="#">About Mariah</a>
+        </li>
+        <li>
+            <a href="#">Performances</a>
+        </li>
+        <li>
+            <a href="#">Projects</a>
+        </li>
+        <li >
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!--main below-->
+<main>
+    <h1>About Mariah</h1>
+
+<div class="gallery">
+
+    <div class="myPhoto">
+        <img src="images/about-image1-mobile-560w.jpg" alt="Mariah Abbott"> 
+    </div>
+    <div class="myPhoto">
+        <img src="images/about-image2-mobile-560w.jpg" alt="Mariah Abbott"> 
+    </div>
+    <div class="myPhoto">
+        <img src="images/about-image3-mobile-560w.jpg" alt="Mariah Abbott"> 
+    </div>
+
+</div> <!--end gallery container-->
+
+<div>
+    <video width="500" height="400" controls>
+        <source src="./video/2020ballet-medbitrate-h264-vbr2-1080p.mp4">
+    </video>
+</div>
+
+</main>
+
+<!--footer below-->
+
+<footer class="clearfix">
+    <p>&copy; 2020 &bull; Anna Abbott &bull; <a href="#">Login</a></p>
+</footer>
+<script src="scripts/toggleMenu.js"></script>
+</body>
+</html>
